@@ -1,6 +1,9 @@
 name: Take screenshots
 
 on:
+  schedule:
+    # every day at 10:00 pm UTC/4:00 PM in Albuquerque, NM
+    - cron:  '00 22 * * *'
   push:
   workflow_dispatch:
 
